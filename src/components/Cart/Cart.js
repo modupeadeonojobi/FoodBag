@@ -4,7 +4,7 @@ import './Cart.css';
 import image1 from '../../Assests/Images/image1.svg';
 import image2 from '../../Assests/Images/image2.svg';
 import image3 from '../../Assests/Images/image3.svg';
-import image4 from '../../Assests/Images/scooter 1.svg';
+import scooter from '../../Assests/Images/scooter 1.svg';
 
 class Cart extends Component {
     state = {}
@@ -32,7 +32,7 @@ class Cart extends Component {
                     <CardList imageUrl={image1} name="KFC - King Bucket" />
                     <CardList imageUrl={image2} name="Refuel max" />
                     <CardList imageUrl={image3} name="Refuel max " />
-                    <img scr={image4} alt="scooter" />
+                    <img scr={scooter} alt="scooter" />
 
 
                 </section>
