@@ -19,9 +19,11 @@ const CartList = ({ name, imageUrl }) => {
                     <h5 className="text">{name}</h5>
                     <img src={plus} alt="icon" /> 2
                     <img src={minus} alt="icon" />
+                    <p className="price">#10,000</p>
 
-                    {/* <p className="text-right">#10,000</p> */}
+
                 </div>
+
 
             </div>
         </div>
