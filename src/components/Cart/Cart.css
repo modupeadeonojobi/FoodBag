@@ -1,0 +1,12 @@
+.breadcrumb {
+    background-color: #fff !important;
+}
+
+.delivery {
+    border-bottom: 1px solid #660;
+    padding: 2rem 0;
+}
+
+.item {
+    display: inline-block;
+}
