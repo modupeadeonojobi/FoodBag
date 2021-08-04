@@ -7,7 +7,20 @@ import image3 from '../../Assests/Images/image3.svg';
 import scooter from '../../Assests/Images/scooter 1.svg';
 
 class Cart extends Component {
-    state = {}
+    state = {
+        counters: [
+            { id: 1, value: 1 },
+        ]
+    }
+
+    handleIncrement = (counter) => {
+        const counters = [...this.state.counters];
+        const index = counters.indexOf(counter);
+        counters[index] = { ...counter };
+        counters[index].value++;
+        this.setState({ counters });
+    }
+
     render() {
         return (
             <div className="">
@@ -29,9 +42,9 @@ class Cart extends Component {
                 </section>
                 <h3>Cart</h3>
                 <section>
-                    <CardList imageUrl={image1} name="KFC - King Bucket" />
-                    <CardList imageUrl={image2} name="Refuel max" />
-                    <CardList imageUrl={image3} name="Refuel max " />
+                    <CardList imageUrl={image1} name="KFC - King Bucket" onIncrement={this.handleIncrement} />
+                    <CardList imageUrl={image2} name="Refuel max" onIncrement={this.handleIncrement} />
+                    <CardList imageUrl={image3} name="Refuel max " onIncrement={this.handleIncrement} />
                     <img scr={scooter} alt="scooter" />
 
 
