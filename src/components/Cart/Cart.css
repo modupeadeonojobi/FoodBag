@@ -4,7 +4,7 @@
 
 .delivery {
     border-bottom: 1px solid lightgray;
-    padding: 2rem 0;
+    padding-top: 2rem 0;
 }
 
 .img-fluid {
@@ -45,6 +45,12 @@
     box-shadow: none !important;
 }
 
+.qty {
+    color: #ad4c4c;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 @media (min-width: 780px) {
     .btn {
         width: 80%;
@@ -64,11 +70,11 @@
     .price {
         font-weight: bold;
         font-size: 1.3rem;
-        margin-left: 59rem !important;
+        margin-left: 38rem !important;
     }
 
     .prices {
-        padding-left: 67rem !important;
+        padding-left: 60rem !important;
         font-weight: bold;
         font-size: 1.3rem;
     }
@@ -76,5 +82,18 @@
     .c_font {
         font-weight: bold;
         font-size: 1.1rem;
+    }
+
+    .items_info {
+        display: inline-block;
+    }
+
+    .delivery {
+        padding: 2rem 0 !important;
+    }
+
+    .c_dilivery {
+        display: inline-block !important;
+        top: -3rem;
     }
 }
