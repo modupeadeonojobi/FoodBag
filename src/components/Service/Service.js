@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Interest.css';
 
 const Service = ({ text, imageUrl, info }) => {
     return (

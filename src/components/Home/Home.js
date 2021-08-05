@@ -15,7 +15,7 @@ import illustrator3 from '../../Assests/Images/illustration_3.svg';
 
 const Home = () => {
     return (
-        <div>
+        <div className="home_section">
             <section>
                 <div className="text-center mt-5 mb-2 pt-5 pb-5">
                     <h1>FoodBag</h1>
@@ -23,9 +23,9 @@ const Home = () => {
                 </div>
 
             </section>
-            <section className="interest">
+            <section className="interest ">
                 <Select />
-                <h5>Pick an interest</h5>
+                <h5 className="pt-5">Pick an interest</h5>
                 <div className="row">
                     <div className="col-sm-3">
                         <Interest imageUrl={fastFood} category="Food Food" text="All sorrows are less with bread." />

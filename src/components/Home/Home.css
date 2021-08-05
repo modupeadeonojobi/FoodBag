@@ -1,9 +1,14 @@
 .services {
-    border-top: 1px solid #777;
-    border-bottom: 1px solid #777;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     padding: 5rem;
 }
 
+.services>h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
 .interest {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }

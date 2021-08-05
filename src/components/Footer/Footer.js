@@ -8,22 +8,22 @@ import facebook from '../../Assests/Images/facebook-f 1.svg';
 const Footer = () => {
     return (
         <div>
-            <div className="text-center pt-5 mt-4">
+            <div className="text-center pt-5 mt-4 footer">
                 <h5>Contact us</h5>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
+                <ul className="nav justify-content-center">
+                    <li className="nav-item">
                         <img className="Avatar"
                             src={twitter}
                             alt="twitter"
                         />
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                         <img className="Avatar"
                             src={youtube}
                             alt="youtube"
                         />
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                         <img className="Avatar"
                             src={facebook}
                             alt="facebook"

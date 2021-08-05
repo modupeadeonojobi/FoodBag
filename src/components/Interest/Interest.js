@@ -3,7 +3,7 @@ import './Interest.css';
 
 const Interest = ({ category, text, imageUrl, alt }) => {
     return (
-        <div className="card" style={{ width: '18rem' }}>
+        <div className="card mb-5" style={{ width: '18rem' }}>
             <div className="card-body">
                 <img className="Avatar"
                     src={imageUrl}

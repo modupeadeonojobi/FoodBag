@@ -7,27 +7,23 @@ import plus from '../../Assests/Images/plus.svg'
 
 class CartList extends Component {
     render() {
-        const { onReset, onDelete, onIncrement, name, imageUrl } = this.props;
+        const { counters } = this.props;
 
         return (
             <div className="">
                 <div className="delivery">
-                    <img className="Avatar pr-3"
-                        src={close} alt="Icon"
+                    <img className="img-fluid img-thumbnail pr-3"
+                        src={close} alt="Icon" onClick={() => this.props.onDelete(counters.id)}
                     />
-                    <img className="Avatar"
-                        src={imageUrl} alt="Icon"
+                    <img className="img-fluid"
+                        src={this.props.imageUrl} alt="Icon"
                     />
-                    <div className="item" >
-                        <h5 className="text">{name}</h5>
-                        <img src={plus} alt="icon" onClick={() => this.props.onIncrement(this.props.counter)} /> 2
-                        <img src={minus} alt="icon" />
-                        <p className="price">#10,000</p>
-
-
+                    <div className="" >
+                        <h6 className="ml-5 c_font">{this.props.name}</h6>
+                        <img className="ml-5" src={plus} alt="icon" onClick={() => this.props.onIncrement(counters)} /> {counters.value}
+                        <img className="pr-5 mr-5 pl-2" src={minus} alt="icon" onClick={() => this.props.onDecrement(counters)} />
+                        <span className="price">N{this.props.price}</span>
                     </div>
-
-
                 </div>
             </div>
         );

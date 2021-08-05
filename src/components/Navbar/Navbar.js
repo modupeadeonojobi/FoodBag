@@ -12,18 +12,18 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <Router>
-            <div className="">
+            <div className="c_navbar">
                 <nav className="navbar navbar-light">
-                    <Link className="navbar-brand" to="/">Food<span>Bag</span></Link>
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/cart">Cart</Link>
+                    <Link className="navbar-brand" to="/">Food<span className="bag">Bag</span></Link>
+                    <ul className="nav justify-content-end">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/cart">Cart</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/login">Login</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/login">Login</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/sign-up" >Sign up</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link c_btn" to="/sign-up" >Sign up</Link>
                         </li>
                     </ul>
                 </nav>

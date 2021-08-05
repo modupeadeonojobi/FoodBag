@@ -1,3 +1,5 @@
-.custome_size {
-    width: 85% !important;
+@media (min-width: 780px) {
+    .custome_size {
+        width: 85% !important;
+    }
 }
