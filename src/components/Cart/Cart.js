@@ -75,7 +75,7 @@ class Cart extends Component {
                     <div className="mb-4">
                         <p className="c_font  c_dilivery pt-1 pb-4 ml-5 float-left">Delivery Fee <span className="prices pt-1 ml-5">N{1200}</span></p>
                     </div>
-                    <p className="font-weight-bold mb-2 pt-5">Total <span >{this.getTotalAmount()}</span></p>
+                    <p className="font-weight-bold mb-2 pt-5">Total <span >N{this.getTotalAmount()}</span></p>
                 </section>
                 <section className=" justify-content-center">
                     <button className="btn btn float-center btn-lg mt-5">Checkout</button>
